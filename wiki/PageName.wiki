@@ -10,9 +10,11 @@ DOM XSS Wiki: http://code.google.com/p/domxsswiki/
 
 XSS auditor paper: http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
 
-http://dl.acm.org/citation.cfm?id=1772701
-http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
+XSSAuditor source code:
 http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/html/parser/
+http://code.google.com/p/webkit-mirror/source/browse/Source/WebCore/html/parser/XSSAuditor.cpp?name=master
+http://www.opensource.apple.com/source/WebCore/WebCore-7536.26.14/html/parser/XSSAuditor.cpp
+
 = Details =
 
 Add your content here.  Format your content with:
