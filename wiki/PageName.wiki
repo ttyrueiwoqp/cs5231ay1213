@@ -6,6 +6,7 @@ DOM based XSS: https://www.owasp.org/index.php/DOM_Based_XSS
 
 DOM based XSS prevention: https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet
 
+DOM XSS Wiki: http://code.google.com/p/domxsswiki/
 
 = Details =
 
