@@ -10,6 +10,8 @@ DOM XSS Wiki: http://code.google.com/p/domxsswiki/
 
 XSS auditor paper: http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
 
+Disabling XSSAuditor in GChrome: http://www.frameloss.org/2011/11/01/using-google-chrome-for-security-testing/
+
 XSSAuditor source code:
 
 http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/html/parser/
