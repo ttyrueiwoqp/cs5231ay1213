@@ -18,7 +18,7 @@ XSS Attacks, Cross Site Scripting Exploits and Defense: DOM-based XSS is discuss
 
 
 
-XSSAuditor source code:
+=XSSAuditor source code=
 
 http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/html/parser/
 
