@@ -14,6 +14,10 @@ Disabling XSSAuditor in GChrome: http://www.frameloss.org/2011/11/01/using-googl
 
 XSS Attacks, Cross Site Scripting Exploits and Defense: DOM-based XSS is discussed in real page 75-86, ebook page 91-102.
 
+
+
+
+
 XSSAuditor source code:
 
 http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/html/parser/
