@@ -5,6 +5,7 @@
 DOM based XSS: https://www.owasp.org/index.php/DOM_Based_XSS (this one looks important)
 
 DOM based XSS prevention: https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet
+(May not be relevant as it is about web application development. -FJ)
 
 DOM XSS Wiki: http://code.google.com/p/domxsswiki/
 
