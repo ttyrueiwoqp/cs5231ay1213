@@ -8,6 +8,8 @@ DOM based XSS prevention: https://www.owasp.org/index.php/DOM_based_XSS_Preventi
 
 DOM XSS Wiki: http://code.google.com/p/domxsswiki/
 
+http://dl.acm.org/citation.cfm?id=1772701
+http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
 = Details =
 
 Add your content here.  Format your content with:
