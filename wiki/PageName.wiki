@@ -12,6 +12,7 @@ XSS auditor paper: http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
 
 http://dl.acm.org/citation.cfm?id=1772701
 http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
+http://svn.webkit.org/repository/webkit/trunk/Source/WebCore/html/parser/
 = Details =
 
 Add your content here.  Format your content with:
