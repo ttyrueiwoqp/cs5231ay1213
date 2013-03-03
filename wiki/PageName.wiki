@@ -18,7 +18,7 @@ https://jobs.missouri.edu/howtos/DisableIE8XSS.pdf
 
 XSS Attacks, Cross Site Scripting Exploits and Defense: DOM-based XSS is discussed in real page 75-86, ebook page 91-102.
 
-
+A tutorial on how to implement a filter: http://www.trailofbits.com/resources/blackbox_reversing_of_xss_filters_slides.pdf
 
 
 
