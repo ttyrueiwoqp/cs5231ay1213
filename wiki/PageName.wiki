@@ -30,6 +30,9 @@ http://code.google.com/p/webkit-mirror/source/browse/Source/WebCore/html/parser/
 
 http://www.opensource.apple.com/source/WebCore/WebCore-7536.26.14/html/parser/XSSAuditor.cpp
 
+=Other filters=
+a java filter: http://www.servletsuite.com/servlets/xssflt.htm
+
 = Details =
 
 Add your content here.  Format your content with:
