@@ -32,6 +32,7 @@ http://www.opensource.apple.com/source/WebCore/WebCore-7536.26.14/html/parser/XS
 
 =Other filters=
 a java filter: http://www.servletsuite.com/servlets/xssflt.htm
+another java filter source: http://java.dzone.com/articles/stronger-anti-cross-site
 
 = Details =
 
