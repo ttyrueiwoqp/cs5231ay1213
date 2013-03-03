@@ -13,6 +13,9 @@ XSS auditor paper: http://www.adambarth.com/papers/2010/bates-barth-jackson.pdf
 
 Disabling XSSAuditor in GChrome: http://www.frameloss.org/2011/11/01/using-google-chrome-for-security-testing/
 
+DIsabling XSS filter in IE8:
+https://jobs.missouri.edu/howtos/DisableIE8XSS.pdf
+
 XSS Attacks, Cross Site Scripting Exploits and Defense: DOM-based XSS is discussed in real page 75-86, ebook page 91-102.
 
 
