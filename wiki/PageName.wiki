@@ -44,6 +44,7 @@ Firefox *noXSS*: Has stopped updating since 2008, no source code available.
 
 IE *IE8 Filter*: A joke.
 
+Intercept web request: https://developer.chrome.com/extensions/webRequest.html
 
 = Details =
 
