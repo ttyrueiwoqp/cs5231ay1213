@@ -35,6 +35,12 @@ a java filter: http://www.servletsuite.com/servlets/xssflt.htm
 
 another java filter source: http://java.dzone.com/articles/stronger-anti-cross-site
 
+= Some Insights =
+Chrome XSSAuditor: Highly integrated into Chrome, our project may not have such a capability.
+Chrome NotScripts: May block all scripts, can try to explore.
+Firefox noXSS: Has stopped updating since 2008, no source code available.
+IE IE8 Filter: A joke.
+
 = Details =
 
 Add your content here.  Format your content with:
