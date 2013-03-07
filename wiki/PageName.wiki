@@ -20,7 +20,7 @@ XSS Attacks, Cross Site Scripting Exploits and Defense: DOM-based XSS is discuss
 
 A tutorial on how to implement a filter: http://www.trailofbits.com/resources/blackbox_reversing_of_xss_filters_slides.pdf
 
-
+More: http://www.acunetix.com/blog/web-security-zone/dom-xss/
 
 =XSSAuditor source code=
 
