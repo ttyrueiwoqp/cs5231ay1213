@@ -1,2 +1,22 @@
+==Browser Selection==
+We have chosen to implement our own plugin on Google Chrome browser. The reason for choosing this browser is because we are able to temporarily disable Google Chrome's anti-XSS protection (XSSAuditor) by using the command:
+{{{
+chrome.exe --args --disable-xss-auditor 
+}}}
+
+This is a very important feature to test our plugin. If the XSSAuditor is enabled, we will not know which of XSSAuditor and our plugin is responsible for blocking the script.
+
+Disabling anti-XSS protection is, as far as we know, not possible in Mozilla Firefox.
+
+
 ==Other filters (not overlapping with Zhaoyu's part)==
 ===Firefox NoScript and Chrome NotScripts===
+
+
+==References==
+
+http://www.frameloss.org/2011/11/01/using-google-chrome-for-security-testing/
+
+http://noscript.net/
+
+http://optimalcycling.com/other-projects/notscripts/
