@@ -55,6 +55,7 @@ Add your content here.  Format your content with:
 
 == zhaoyu's part ==
 Study form other filters:
+
 In order to design and implement our own filter, some basic knowledge need to be obtained from the current implementations. We find several implementations, such as noXSS, IE8 Filter and XSSAuditor. However, noXSS Has stopped updating since 2008 and there are  no source code available; IE8 Filter never published any useful information. Only XSSAuditor is still updating and it’s built into the Chrome browser. Finally, we decided to focus on XSSAuditor.
 
 XSSAuditor is a filter which is highly integrated into Chrome. The XSSAuditor is in the pipeline of displaying a web page in Chrome. After receive a webpage from the server, Chrome start to parse the web page information, and construct a structure of the web page. When the parsing is finish by the browser, XSSAuditor jumps in and try to find out whether there are some xss attack in the webpage or not. Then the last step is Chrome continues with the rendering process. We can see XSSAuditor use the pipeline of the chrome browser, unlike other filters such as noXSS which need a separate parser to parse the page first. 
