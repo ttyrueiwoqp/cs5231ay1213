@@ -18,9 +18,9 @@ Disabling anti-XSS protection is, as far as we know, not possible in Mozilla Fir
 
 ==Other filters (not overlapping with Zhaoyu's part, maybe can merge)==
 ===Firefox NoScript and Chrome NotScripts===
-We have also taken a look at plugins which by default block all scripts from executing until they are specifically enabled by the user. With these plugins, users will have to add the Javascript which is allowed to be executed one-by-one to the whitelist. The granularity of each entry in the whitelist is the hostname of servers hosting the Javascript script.
+We have also taken a look at plugins which by default block all scripts from executing until they are specifically enabled by the user. With these plugins, users will have to add the Javascript which is allowed to be executed one-by-one to the whitelist. The granularity of each entry in the whitelist is the domain name of the servers hosting the Javascript scripts.
 
-While this may initially sound like a good idea for security, this causes a lot of trouble to users to add the scripts from their favorite websites to the whitelist one-by-one. There may also be a possibility that from the many scripts hosted by the same host, several scripts are not safe to execute. Another possible problem is that a script which is safe to execute today may not be necessarily safe again tomorrow.
+While this may initially sound like a good idea for security, this causes a lot of trouble to users to add the scripts from their favorite websites to the whitelist one-by-one. There may also be a possibility that from the many scripts hosted on the same domain, several scripts are not safe to execute. Another possible problem is that a script which is safe to execute today may not be necessarily safe again tomorrow.
 
 ==References==
 
