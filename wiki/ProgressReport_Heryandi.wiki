@@ -1,3 +1,7 @@
+==DOM-based XSS Definition==
+
+
+
 ==Browser Selection==
 We have chosen to implement our own plugin on Google Chrome browser. The reason for choosing this browser is because we are able to temporarily disable Google Chrome's anti-XSS protection (XSSAuditor) by using the command:
 {{{
@@ -9,11 +13,15 @@ This is a very important feature to test our plugin. If the XSSAuditor is enable
 Disabling anti-XSS protection is, as far as we know, not possible in Mozilla Firefox.
 
 
-==Other filters (not overlapping with Zhaoyu's part)==
+==Other filters (not overlapping with Zhaoyu's part, maybe can merge)==
 ===Firefox NoScript and Chrome NotScripts===
+We have also taken a look at plugins which by default block all scripts from executing until they are specifically enabled by the user. With these plugins, users will have to add the Javascript which is allowed to be executed one-by-one to the whitelist. The granularity of each entry in the whitelist is the hostname of servers hosting the Javascript script.
 
+While this may initially sound like a good idea for security, this causes a lot of trouble to users to add the scripts from their favorite websites to the whitelist one-by-one. There is also no guarantee that all scripts from the same host will be safe. Another possible problem is that a script which is safe to execute today may not be necessarily safe again tomorrow.
 
 ==References==
+
+http://www.webappsec.org/projects/articles/071105.html
 
 http://www.frameloss.org/2011/11/01/using-google-chrome-for-security-testing/
 
