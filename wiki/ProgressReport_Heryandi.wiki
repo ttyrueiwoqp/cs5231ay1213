@@ -2,6 +2,8 @@
 ===Definition===
 The main difference of DOM-based XSS compared to other XSS vulnerabilities such as reflected and stored XSS is that DOM-based XSS attack doesn't have to send any data at all towards the server. The attack happens entirely within the browser as opposed to be dependent on the response from the server.
 
+One prerequisite for DOM-based XSS is that the HTML page uses data from document.location or document.URL or document.referrer without sanitizing it first. This prerequisite, however, may be violated as the attackers get more creative.
+
 ===Example===
 We can easily craft a very simple HTML page with DOM-based XSS vulnerability as follows:
 {{{
