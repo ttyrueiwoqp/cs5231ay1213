@@ -1,1 +1,2 @@
 ==Other filters (not overlapping with Zhaoyu's part)==
+===Firefox NoScript and Chrome NotScripts===
