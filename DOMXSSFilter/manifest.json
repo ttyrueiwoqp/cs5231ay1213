@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+	
+  "name": "DOM XSS Filter",
+  "description": "This extension filters DOM-based XSS attacks.",
+  "version": "1.0",
+
+  "background": {
+    "page": "DOMXSSFilter.html"
+  },
+  "browser_action": {
+	"default_icon": "icon.png"
+  },
+  "permissions": [
+	"tabs",            
+    "*://*/*",         
+    "webRequestBlocking", 
+    "webRequest"
+  ]
+}
