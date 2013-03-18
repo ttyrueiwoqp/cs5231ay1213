@@ -9,8 +9,6 @@ chrome.webRequest.onBeforeRequest.addListener (
         console.log("before replace: ", url);
         console.log("after replace: ", newUrl);
         return {redirectUrl: newUrl};
-
-        return {};
     },
     {
         urls: ["<all_urls>"]
