@@ -14,7 +14,11 @@ chrome.webRequest.onBeforeRequest.addListener (
         return {redirectUrl: newUrl};
         */
         
-        return {redirectUrl: encodeURI(details.url)};
+        while(url !== decodeURI(url)) {
+            url = decodeURI(url);
+        }
+        
+        return {redirectUrl: encodeURI(url)};
     },
     {urls: ["<all_urls>"]}, 
     ["blocking"]);
