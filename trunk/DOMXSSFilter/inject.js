@@ -19,15 +19,15 @@ console.log('fhyhh' +document.location);
 	});
 
 	
-	s = document.location;
-	document .__defineGetter__("location", function() {
-	console.log("shit" +encodeURI(s));
-		return encodeURI(s);  
-	});
+	// s = document.location;
+	// document .__defineGetter__("location", function() {
+	//console.log("shittt" +encodeURI(s));
+		// return encodeURI(s);  
+	// });
 	
 	s = document.location.href;
 	document.location .__defineGetter__("href", function() {
-	console.log("getter");
+	console.log("shittt" +encodeURI(s));
 		return encodeURI(s);  
 	});
 	
@@ -35,7 +35,8 @@ console.log('fhyhh' +document.location);
 	document .__defineGetter__("referer", function() {
 		return encodeURI(s);  
 	});
-	
+		console.log("shit" +document.location.href);
+
 	console.log("end");
 	function test()
 	{
