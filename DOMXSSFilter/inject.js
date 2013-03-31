@@ -1,27 +1,34 @@
 
 
 console.log("inside inject.js");
-
+function encodeStringOnce(str)
+{
+        while(str !== decodeURI(str)) {
+            str = decodeURI(str);
+        }
+        
+        return encodeURI(str);
+}
 console.log(document.location);
 	var unUrl = document.URL;
 	document .__defineGetter__("URL", function() {
 	console.log("Get url" +encodeURI(unUrl));
 	
-		return encodeURI(unUrl);  
+		return encodeStringOnce(unUrl);  
 	});
 
 	
 	var urlUnencoded = document.URLUnencoded;
 	document .__defineGetter__("URLUnencoded", function() {
-		return encodeURI(urlUnencoded);  
+		return encodeStringOnce(urlUnencoded);  
 	});
 
 	
 	var loc = document.location;
 	var locHash = document.location.hash;
 	document .__defineGetter__("location", function() {
-	console.log("Get location " +encodeURI(loc));
-		loc.hash = encodeURI(locHash);
+	console.log("Get location " +encodeStringOnce(loc));
+		loc.hash = encodeStringOnce(locHash);
 		return loc;  
 	});
 	
@@ -29,7 +36,7 @@ console.log(document.location);
 	
 	var refe = document.referer;
 	document .__defineGetter__("referer", function() {
-		return encodeURI(refe);  
+		return encodeStringOnce(refe);  
 	});
 
 	
