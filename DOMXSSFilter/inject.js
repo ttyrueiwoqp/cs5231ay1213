@@ -9,6 +9,7 @@ console.log('fhyhh' +document.location);
 //document.body.innerHTML = "ASDSADASD";
 	var s = document.URL;
 	document .__defineGetter__("URL", function() {
+	console.log("shittt" +encodeURI(s));
 		return encodeURI(s);  
 	});
 
@@ -19,23 +20,23 @@ console.log('fhyhh' +document.location);
 	});
 
 	
-	// s = document.location;
-	// document .__defineGetter__("location", function() {
-	//console.log("shittt" +encodeURI(s));
+	var ss = document.location;
+	document .__defineGetter__("location", function() {
+	console.log("shittttt" +encodeURI(ss));
+		return encodeURI(ss);  
+	});
+	
+	// s = document.location.href;
+	// document.location .__defineGetter__("href", function() {
+	// console.log("getter" +encodeURI(s));
 		// return encodeURI(s);  
 	// });
-	
-	s = document.location.href;
-	document.location .__defineGetter__("href", function() {
-	console.log("shittt" +encodeURI(s));
-		return encodeURI(s);  
-	});
 	
 	s = document.referer;
 	document .__defineGetter__("referer", function() {
 		return encodeURI(s);  
 	});
-		console.log("shit" +document.location.href);
+
 
 	console.log("end");
 	function test()
