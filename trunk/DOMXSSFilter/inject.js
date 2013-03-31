@@ -1,15 +1,11 @@
 
 
 console.log("inside inject.js");
-var aaa = document.createElement("div");
-aaa.innerHTML = "qqq";
-console.log(document.URL);
-console.log('fhyhh' +document.location);
-//document.body.insertBefore(aaa, document.body.firstChild);
-//document.body.innerHTML = "ASDSADASD";
+
+console.log(document.location);
 	var unUrl = document.URL;
 	document .__defineGetter__("URL", function() {
-	console.log("shitttfangjian" +encodeURI(unUrl));
+	console.log("Get url" +encodeURI(unUrl));
 	
 		return encodeURI(unUrl);  
 	});
@@ -24,7 +20,7 @@ console.log('fhyhh' +document.location);
 	var loc = document.location;
 	var locHash = document.location.hash;
 	document .__defineGetter__("location", function() {
-	console.log("shittttt" +encodeURI(loc));
+	console.log("Get location " +encodeURI(loc));
 		loc.hash = encodeURI(locHash);
 		return loc;  
 	});
@@ -36,9 +32,8 @@ console.log('fhyhh' +document.location);
 		return encodeURI(refe);  
 	});
 
-
+	
 	console.log("end");
-	function test()
-	{
-	 alert("aaaa");
-	 }
+	function test(){
+	alert('try');
+	};
