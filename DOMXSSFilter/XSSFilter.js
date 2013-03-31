@@ -1,4 +1,5 @@
 // Force encodeURI
+
 chrome.webRequest.onBeforeRequest.addListener (
     function(details) {
         var url = details.url;
@@ -13,6 +14,8 @@ chrome.webRequest.onBeforeRequest.addListener (
         console.log("after replace: ", newUrl);
         return {redirectUrl: newUrl};
         */
+        
+        console.log("onBeforeRequest");
         
         while(url !== decodeURI(url)) {
             url = decodeURI(url);
@@ -36,3 +39,18 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     },
     {urls: ["<all_urls>"]},
     ["blocking", "requestHeaders"]);
+
+ chrome.webRequest.onCompleted.addListener(
+    function(details) {
+        alert("Too late, sorry!");
+        console.log("Too late, sorry!");
+    },
+    {urls: ["<all_urls>"]},
+    []); 
+/*
+ chrome.devtools.network.onRequestFinished.addListener(
+    function(request) {
+        console.log("onRequestFinished");
+        console.log(request.getContent());
+    });
+*/
