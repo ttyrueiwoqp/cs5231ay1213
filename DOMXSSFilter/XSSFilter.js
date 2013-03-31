@@ -1,30 +1,30 @@
 // Force encodeURI
 
-chrome.webRequest.onBeforeRequest.addListener (
-    function(details) {
-        var url = details.url;
-        /*
-        if( url.indexOf("bing")!= -1) {
-            return {redirectUrl: "http://www.google.com"}; 
-        }
-        */
-        /*
-        var newUrl = url.replace(/<script>.*<\/script>/g, "");
-        console.log("before replace: ", url);
-        console.log("after replace: ", newUrl);
-        return {redirectUrl: newUrl};
-        */
+// chrome.webRequest.onBeforeRequest.addListener (
+    // function(details) {
+        // var url = details.url;
+        // /*
+        // if( url.indexOf("bing")!= -1) {
+            // return {redirectUrl: "http://www.google.com"}; 
+        // }
+        // */
+        // /*
+        // var newUrl = url.replace(/<script>.*<\/script>/g, "");
+        // console.log("before replace: ", url);
+        // console.log("after replace: ", newUrl);
+        // return {redirectUrl: newUrl};
+        // */
         
-        console.log("onBeforeRequest");
+        // console.log("onBeforeRequest");
         
-        while(url !== decodeURI(url)) {
-            url = decodeURI(url);
-        }
+        // while(url !== decodeURI(url)) {
+            // url = decodeURI(url);
+        // }
         
-        return {redirectUrl: encodeURI(url)};
-    },
-    {urls: ["<all_urls>"]}, 
-    ["blocking"]);
+        // return {redirectUrl: encodeURI(url)};
+    // },
+    // {urls: ["<all_urls>"]}, 
+    // ["blocking"]);
 
 // Remove all referer information
 chrome.webRequest.onBeforeSendHeaders.addListener(
@@ -42,7 +42,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
  chrome.webRequest.onCompleted.addListener(
     function(details) {
-        alert("Too late, sorry!");
+        //alert("Too late, sorry!");
         console.log("Too late, sorry!");
     },
     {urls: ["<all_urls>"]},
