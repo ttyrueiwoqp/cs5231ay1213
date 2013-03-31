@@ -7,34 +7,33 @@ console.log(document.URL);
 console.log('fhyhh' +document.location);
 //document.body.insertBefore(aaa, document.body.firstChild);
 //document.body.innerHTML = "ASDSADASD";
-	var s = document.URL;
+	var unUrl = document.URL;
 	document .__defineGetter__("URL", function() {
-	console.log("shittt" +encodeURI(s));
-		return encodeURI(s);  
+	console.log("shitttfangjian" +encodeURI(unUrl));
+	
+		return encodeURI(unUrl);  
 	});
 
 	
-	s = document.URLUnencoded;
+	var urlUnencoded = document.URLUnencoded;
 	document .__defineGetter__("URLUnencoded", function() {
-		return encodeURI(s);  
+		return encodeURI(urlUnencoded);  
 	});
 
 	
-	var ss = document.location;
+	var loc = document.location;
+	var locHash = document.location.hash;
 	document .__defineGetter__("location", function() {
-	console.log("shittttt" +encodeURI(ss));
-		return encodeURI(ss);  
+	console.log("shittttt" +encodeURI(loc));
+		loc.hash = encodeURI(locHash);
+		return loc;  
 	});
 	
-	// s = document.location.href;
-	// document.location .__defineGetter__("href", function() {
-	// console.log("getter" +encodeURI(s));
-		// return encodeURI(s);  
-	// });
+
 	
-	s = document.referer;
+	var refe = document.referer;
 	document .__defineGetter__("referer", function() {
-		return encodeURI(s);  
+		return encodeURI(refe);  
 	});
 
 
