@@ -33,4 +33,7 @@ document.__defineGetter__("referrer", function() {
     return encodeStringOnce(__refe);  
 });
 
+// Protect window.location as well
+window.location.hash = encodeStringOnce(window.location.hash);
+
 console.log("inject.js end");
