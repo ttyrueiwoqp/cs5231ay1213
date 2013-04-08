@@ -21,10 +21,9 @@ document.__defineGetter__("URLUnencoded", function() {
 });
 
 var __loc = document.location;
-var __locHash = document.location.hash;
 document.__defineGetter__("location", function() {
     console.log("Get location: " + encodeStringOnce(__loc));
-    __loc.hash = encodeStringOnce(__locHash);
+    __loc.hash = encodeStringOnce(__loc.hash);
     return __loc;
 });
 
