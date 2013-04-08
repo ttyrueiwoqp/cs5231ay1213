@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://www.yahoo.com/somesillycss10.css" rel="stylesheet">
+        <script>
+        var myWindow;
+        function openWin()
+        {
+            myWindow = window.open("simple_windowname.html", "<script>alert(1);</scr" + "ipt>", "", false);
+        }
+        </script>
+    </head>
+<body>
+    <input type="button" value="Open 'myWindow'" onclick="openWin()" />
+    <script>
+      console.log("In page");
+      document.write("<p>This window's name is: " + window.name + "</p>");
+    </script>
+</body>
+</html>
+

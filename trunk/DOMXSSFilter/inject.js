@@ -32,6 +32,11 @@ document.__defineGetter__("referrer", function() {
     return encodeStringOnce(__refe);  
 });
 
+var __name = window.name;
+window.__defineGetter__("name", function() {
+    return encodeStringOnce(__name);  
+});
+
 // Protect window.location as well
 window.location.hash = encodeStringOnce(window.location.hash);
 
