@@ -39,5 +39,23 @@ window.__defineGetter__("name", function() {
 
 // Protect window.location as well
 window.location.hash = encodeStringOnce(window.location.hash);
+var __wloc_hash = window.location.hash;
+window.location.__defineGetter__("hash", function() {
+    return encodeStringOnce(__wloc_hash);  
+});
+
+Object.defineProperty(document, "referrer", {configurable: false});
+Object.defineProperty(document, "URL", {configurable: false});
+Object.defineProperty(document, "location", {configurable: false});
+Object.defineProperty(document.location, "hash", {configurable: false});
+Object.defineProperty(window, "name", {configurable: false});
+Object.defineProperty(window.location, "hash", {configurable: false});
+
+console.log("document.referrer: ", Object.getOwnPropertyDescriptor(document, "referrer"));
+console.log("document.URL: ", Object.getOwnPropertyDescriptor(document, "URL"));
+console.log("document.location: ", Object.getOwnPropertyDescriptor(document, "location"));
+console.log("document.location.hash: ", Object.getOwnPropertyDescriptor(document.location, "hash"));
+console.log("window.name: ", Object.getOwnPropertyDescriptor(window, "name"));
+console.log("window.location.hash: ", Object.getOwnPropertyDescriptor(window.location, "hash"));
 
 console.log("inject.js end");
