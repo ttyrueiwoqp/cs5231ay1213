@@ -17,14 +17,10 @@
     "webRequestBlocking", 
     "webRequest"
   ],
-  
-  "web_accessible_resources": [
-    "inject.js"
-  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["/toolDoInject.js"],
+      "js": ["/inject.js"],
       "run_at": "document_start"
     }
   ]
