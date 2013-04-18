@@ -39,9 +39,13 @@ window.__defineGetter__("name", function() {
 
 // Protect window.location as well
 window.location.hash = encodeStringOnce(window.location.hash);
+
 var __wloc_hash = window.location.hash;
 window.location.__defineGetter__("hash", function() {
     return encodeStringOnce(__wloc_hash);  
+});
+window.location.__defineSetter__("hash", function(val) {
+    __wloc_hash = val;
 });
 
 Object.defineProperty(document, "referrer", {configurable: false});
