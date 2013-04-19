@@ -16,6 +16,11 @@ document.__defineGetter__("URL", function() {                                   
     return encodeStringOnce(__url);                                             \
 });                                                                             \
                                                                                 \
+var __duri = document.documentURI;                                              \
+document.__defineGetter__("documentURI", function() {                           \
+    return encodeStringOnce(__duri);                                            \
+});                                                                             \
+                                                                                \
 var __urlUnencoded = document.URLUnencoded;                                     \
 document.__defineGetter__("URLUnencoded", function() {                          \
     return encodeStringOnce(__urlUnencoded);                                    \
@@ -50,6 +55,7 @@ window.location.__defineSetter__("hash", function(val) {                        
                                                                                 \
 Object.defineProperty(document, "referrer", {configurable: false});             \
 Object.defineProperty(document, "URL", {configurable: false});                  \
+Object.defineProperty(document, "documentURI", {configurable: false});          \
 Object.defineProperty(document, "location", {configurable: false});             \
 Object.defineProperty(document.location, "hash", {configurable: false});        \
 Object.defineProperty(window, "name", {configurable: false});                   \
@@ -57,6 +63,7 @@ Object.defineProperty(window.location, "hash", {configurable: false});          
                                                                                 \
 console.log("document.referrer: ", Object.getOwnPropertyDescriptor(document, "referrer"));                              \
 console.log("document.URL: ", Object.getOwnPropertyDescriptor(document, "URL"));                                        \
+console.log("document.documentURI: ", Object.getOwnPropertyDescriptor(document, "documentURI"));                        \
 console.log("document.location: ", Object.getOwnPropertyDescriptor(document, "location"));                              \
 console.log("document.location.hash: ", Object.getOwnPropertyDescriptor(document.location, "hash"));                    \
 console.log("window.name: ", Object.getOwnPropertyDescriptor(window, "name"));                                          \
