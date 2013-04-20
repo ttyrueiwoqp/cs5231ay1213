@@ -1,7 +1,0 @@
-http://localhost:8080/cs#default=<script>alert(document.location)</script>
-
-http://localhost:8080/cs?default=<script>alert(document.location)</script>
-
-http://localhost:8080/simple.html#default=<script>alert(document.location)</script>
-
-http://localhost:8080/simple.html?default=<script>alert(document.location)</script>
