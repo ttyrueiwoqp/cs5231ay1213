@@ -4,10 +4,15 @@ s.textContent = '                                                               
 console.log("injection string start");                                          \
 function encodeStringOnce(str)                                                  \
 {                                                                               \
-    while(str !== decodeURI(str)) {                                             \
-        str = decodeURI(str);                                                   \
+    try {                                                                       \
+        while(str !== decodeURI(str)) {                                         \
+            str = decodeURI(str);                                               \
+        }                                                                       \
+        return encodeURI(str);                                                  \
     }                                                                           \
-    return encodeURI(str);                                                      \
+    catch(e) {                                                                  \
+        return "";                                                              \
+    }                                                                           \
 }                                                                               \
                                                                                 \
 var __url = document.URL;                                                       \
