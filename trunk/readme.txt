@@ -10,6 +10,6 @@ chrome://extensions
 
 Check 'Developer mode'. Click on 'Load unpacked extension', select the folder DOMXSSFilter and click on 'OK'. Now the extension is installed.
 
-A web server, e.g. apache, is needed to host the web pages in 'test' folder.
+A web server, e.g. apache, is needed to host the web pages in 'test' folder, else the extension will not work.
 
 Please refer to the section 'Tests and Results' in the report for more details.
